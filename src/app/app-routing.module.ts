@@ -9,7 +9,7 @@ const routes: Routes = [
     path: 'files',
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: `${environment.mfe.kc_files_front}/remoteEntry.js`,
+      remoteEntry: environment.mfe.kc_files_front,
       exposedModule: 'kc_files_front'
     }).then(m => m.FilesModule)
   },

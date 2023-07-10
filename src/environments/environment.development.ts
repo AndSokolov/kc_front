@@ -1,5 +1,5 @@
 export const environment = {
   mfe: {
-    "kc_files_front": "http://localhost:4201"
+    "kc_files_front": "http://localhost:4201/remoteEntry.js"
   }
 };

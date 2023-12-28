@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { loadRemoteModule } from '@angular-architects/module-federation';
-import { environment } from "../environments/environment";
+import { RouterModule } from '@angular/router';
+import {
+  getManifest,
+  loadRemoteModule
+} from '@angular-architects/module-federation';
 
+import { MfeManifest } from './types/config';
 
-const routes: Routes = [
-  {
-    path: 'files',
-    loadChildren: () => loadRemoteModule({
+const manifest = getManifest<MfeManifest>();
+const manifestEntries = Object.keys(manifest);
+
+const routes = manifestEntries.map(entry => ({
+  path: entry,
+  loadChildren: () =>
+    loadRemoteModule({
       type: 'module',
-      remoteEntry: environment.mfe.kc_files_front,
-      exposedModule: 'kc_files_front'
-    }).then(m => m.FilesModule)
-  },
-];
+      remoteEntry: manifest[entry].remoteEntry,
+      exposedModule: manifest[entry].remoteName
+    }).then(m => m[manifest[entry].moduleName])
+}));
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

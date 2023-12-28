@@ -1,5 +1,4 @@
 export const environment = {
-  mfe: {
-    "kc_files_front": "http://localhost:4201/remoteEntry.js"
-  }
+  production: false,
+  default_logo_url: 'http://localhost:4200/assets/logo/kvadra_logo.svg'
 };

@@ -1,0 +1,26 @@
+.user-info {
+  list-style: none;
+  background: #FFFFFF;
+  padding: 6px 0;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px 0 #00000026;
+  li {
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      display: block;
+      padding: 12px;
+      cursor: pointer;
+      &:hover {
+        background: rgba(197, 197, 197, 0.13);
+      }
+    }
+  }
+
+  .divider {
+    border-bottom: 1px solid gray;
+    margin: 8px 0;
+  }
+}

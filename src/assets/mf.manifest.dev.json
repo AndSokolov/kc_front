@@ -1,20 +1,8 @@
 {
-  "files": {
-    "remoteName": "kc_files_front",
-    "remoteEntry": "http://localhost:4201/remoteEntry.js",
-    "logoUrl": "http://localhost:4201/assets/logo/kvadra_files_logo.svg",
-    "moduleName": "FilesModule"
-  },
   "kvadraid": {
     "remoteName": "kc_kvadraid_front",
     "remoteEntry": "http://localhost:4202/remoteEntry.js",
     "logoUrl": "http://localhost:4202/assets/logo/kvadra_id.svg",
     "moduleName": "KvadraIdModule"
-  },
-  "backups": {
-    "remoteName": "kc_backups_front",
-    "remoteEntry": "http://localhost:4203/remoteEntry.js",
-    "logoUrl": "http://localhost:4203/assets/kvadra_backups_logo.svg",
-    "moduleName": "BackupsModule"
   }
 }

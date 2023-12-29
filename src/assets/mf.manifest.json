@@ -4,5 +4,11 @@
     "remoteEntry": "https://kc-files-front.vercel.app/remoteEntry.js",
     "logoUrl": "https://kc-files-front.vercel.app/assets/logo/kvadra_id.svg",
     "moduleName": "KvadraIdModule"
+  },
+  "backups": {
+    "remoteName": "kc_backups_front",
+    "remoteEntry": "https://kc-dev-backups.dev.yadro.com/remoteEntry.js",
+    "logoUrl": "https://kc-dev-backups.dev.yadro.com/assets/kvadra_backups_logo.svg",
+    "moduleName": "BackupsModule"
   }
 }

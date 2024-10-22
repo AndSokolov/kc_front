@@ -1,0 +1,23 @@
+{
+  "kvadra-id": {
+    "remoteName": "kc_kvadraid_front",
+    "moduleName": "KvadraIdModule",
+    "remoteEntry": "https://id.kvadra.tech/remoteEntry.js",
+    "logoUrl": "https://id.kvadra.tech/assets/logo/kvadra_id.svg",
+    "showSidebarBtn": true
+  },
+  "locator": {
+    "remoteName": "kc_locator_front",
+    "moduleName": "LocatorModule",
+    "remoteEntry": "https://find.kvadra.tech/remoteEntry.js",
+    "logoUrl": "https://find.kvadra.tech/assets/logo/kvadra_locator.svg",
+    "showSidebarBtn": false
+  },
+  "center": {
+    "remoteName": "kc_center_front",
+    "moduleName": "CenterModule",
+    "remoteEntry": "https://center.kvadra.tech/remoteEntry.js",
+    "logoUrl": "https://center.kvadra.tech/assets/logo/kvadra_center.svg",
+    "showSidebarBtn": true
+  }
+}

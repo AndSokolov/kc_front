@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import {
-  getManifest,
-  loadRemoteModule
-} from '@angular-architects/module-federation';
-
+import { RouterModule, Routes } from '@angular/router';
+import { getManifest, loadRemoteModule } from '@angular-architects/module-federation';
 import { MfeManifest } from './types/config';
 
 const manifest = getManifest<MfeManifest>();
 const manifestEntries = Object.keys(manifest);
 
-const routes = manifestEntries.map(entry => ({
+const routes_mfe = manifestEntries.map(entry => ({
   path: entry,
   loadChildren: () =>
     loadRemoteModule({
@@ -20,8 +16,12 @@ const routes = manifestEntries.map(entry => ({
     }).then(m => m[manifest[entry].moduleName])
 }));
 
+const routes: Routes = [
+  ...routes_mfe
+];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

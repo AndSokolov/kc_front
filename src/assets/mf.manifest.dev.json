@@ -1,8 +1,7 @@
 {
-  "kvadraid": {
-    "remoteName": "kc_kvadraid_front",
-    "remoteEntry": "http://localhost:4202/remoteEntry.js",
-    "logoUrl": "http://localhost:4202/assets/logo/kvadra_id.svg",
-    "moduleName": "KvadraIdModule"
+  "center": {
+    "remoteName": "kc_center_admin_front",
+    "moduleName": "CenterModule",
+    "remoteEntry": "http://localhost:4201/remoteEntry.js"
   }
 }

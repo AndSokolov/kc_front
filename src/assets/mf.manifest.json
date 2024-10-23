@@ -1,30 +1,7 @@
 {
-  "kvadra-id": {
-    "remoteName": "kc_kvadraid_front",
-    "moduleName": "KvadraIdModule",
-    "remoteEntry": "https://kc-dev-id.dev.yadro.com/remoteEntry.js",
-    "logoUrl": "https://kc-dev-id.dev.yadro.com/assets/logo/kvadra_id.svg",
-    "showSidebarBtn": true
-  },
-  "backups": {
-    "remoteName": "kc_backups_front",
-    "moduleName": "BackupsModule",
-    "remoteEntry": "https://kc-dev-backups.dev.yadro.com/remoteEntry.js",
-    "logoUrl": "https://kc-dev-backups.dev.yadro.com/assets/kvadra_backups_logo.svg",
-    "showSidebarBtn": false
-  },
-  "locator": {
-    "remoteName": "kc_locator_front",
-    "moduleName": "LocatorModule",
-    "remoteEntry": "https://kc-dev-locator.dev.yadro.com/remoteEntry.js",
-    "logoUrl": "https://kc-dev-locator.dev.yadro.com/assets/logo/kvadra_locator.svg",
-    "showSidebarBtn": false
-  },
   "center": {
     "remoteName": "kc_center_front",
     "moduleName": "CenterModule",
-    "remoteEntry": "https://kc-dev-center.dev.yadro.com/remoteEntry.js",
-    "logoUrl": "https://kc-dev-center.dev.yadro.com/assets/logo/kvadra_center.svg",
-    "showSidebarBtn": true
+    "remoteEntry": "https://kc-files-front.vercel.app/remoteEntry.js"
   }
 }

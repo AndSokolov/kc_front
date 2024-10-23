@@ -2,6 +2,6 @@
   "center": {
     "remoteName": "kc_center_admin_front",
     "moduleName": "CenterModule",
-    "remoteEntry": "http://localhost:4201/remoteEntry.js"
+    "remoteEntry": "https://kc-files-front.vercel.app/remoteEntry.js"
   }
 }
